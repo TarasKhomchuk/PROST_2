@@ -41,12 +41,16 @@ ul {
     margin: 0%;
 }
 
-.menu {
+.menu-container{
     /* display: none; */
     /* align-items: center;
     position: relative; */
+  /* height: 100%; */
+}
+.menu {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -119,4 +123,37 @@ footer{
 .yellow-color{
 background: #f1f510;
 height: 4px;
+}
+
+.header-burger{
+  /* display: none; */
+  cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.burger-line{
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+@media (min-width: 1024px) {
+    .header-burger {
+        display: none;
+    }
+    .menu-container {
+        display: flex;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu-container {
+        display: none;
+    }
+    .header-burger {
+        display: flex;
+    }
 }
