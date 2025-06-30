@@ -22,7 +22,7 @@ body
 
 header
 {
-    padding: 40px;
+    padding: 40px 0px 40px 40px
 }
 #box
 {
@@ -86,7 +86,7 @@ main
   flex: 1;
 }
 .content-container{
-padding: 0px 40px 0px 40px;
+padding: 0px 0px 0px 40px;
 /* min-height: 100%; */
 }
 .content{
