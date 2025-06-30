@@ -129,12 +129,20 @@ main
 
 .header-burger
 {
-  cursor: pointer;
   flex-direction: column;
   justify-content: center;
   padding: 20px;
   width: 100%;
   align-items: flex-end;
+}
+
+#burger
+{
+  width: 50px;
+  cursor: pointer;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
 }
 
 .burger-line{
