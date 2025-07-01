@@ -2,6 +2,8 @@
   --main-white: rgb(226, 227, 228);
   --main-black: rgb(26, 26, 26);
   --prod-item-dgray: rgb(179, 179, 179);
+  --carrousel-dark: rgb(179, 179, 179);
+  --carrousel-light: rgb(230, 230, 230);
 }
 
 body
@@ -266,8 +268,29 @@ main
 }
 
 .underline-red {
-  /* text-decoration: underline red 4px; */
     display: inline;
     border-bottom: 4px solid red;
-    padding-bottom: 2px; /* Додатковий відступ, якщо потрібно */  
+    padding-bottom: 2px;
+}
+
+.courussel-stripe
+{
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dark
+{
+  background-color: var(--carrousel-dark);
+}
+.light
+{
+  background-color: var(--carrousel-light);
+}
+.courussel-stripe img
+{
+  height: 200px;
+  /* display: flex; */
 }
