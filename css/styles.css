@@ -42,7 +42,6 @@ header
 
 ul
 {
-    display: flex;
     list-style: none;
     list-style-position: inside;
     padding-inline-start: 0%;
@@ -67,10 +66,16 @@ li.menu-item
   font-size: 30px;
 }
 
-a.menu-item
+.menu-item a
 {
   text-decoration: none;
   cursor: pointer;
+  color: black;
+}
+
+.menu-item a:hover
+{
+  text-shadow: 3px 3px 3px darkgray;
 }
 
 img.logo
@@ -100,7 +105,7 @@ main
 .content
 {
   background-color: var(--main-white);
-  border: 1px solid rgb(0, 0, 0);
+  /* border: 1px solid rgb(0, 0, 0); */
 }
 
 .footer-container
@@ -157,14 +162,6 @@ main
   margin: 6px 0;
 }
 
-/* #burger.active span:nth-child(0)  
-{
-    transform-origin: bottom left;
-    transform: translate(-50%, -50%) rotate(45deg);
-    left: calc(50% + 2px);
-    top: 20%;
-}
-*/
 #burger.active div:nth-child(1) {
     transform-origin: top left;
     transform: translate(7px, 35px) rotate(-45deg);
