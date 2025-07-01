@@ -1,6 +1,7 @@
 :root{
   --main-white: rgb(226, 227, 228);
   --main-black: rgb(26, 26, 26);
+  --prod-item-dgray: rgb(179, 179, 179);
 }
 
 body
@@ -62,7 +63,8 @@ ul
 
 li.menu-item
 {
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 20px 20px 5px 20px;
   font-size: 30px;
 }
 
@@ -106,6 +108,7 @@ main
 {
   background-color: var(--main-white);
   /* border: 1px solid rgb(0, 0, 0); */
+  padding: 20px;
 }
 
 .footer-container
@@ -174,23 +177,48 @@ main
     display: none;
 }
 
+/* desktop */
 @media (min-width: 1025px) {
-    .header-burger {
-        display: none;
-    }
-    /* .menu-container { */
-    .menu_mobile_media{
-        display: flex;
-    }
+  .header-burger 
+  {
+      display: none;
+  }
+
+  .menu_mobile_media
+  {
+      display: flex;
+  }
+
+  .product-item
+  {
+    height: 150px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 1024px;
+  }
 }
+/* mobile */
 @media (max-width: 1024px) {
-    /* .menu-container { */
-      .menu_mobile_media{
-        display: none;
-    }
-    .header-burger {
-        display: flex;
-    }
+  .menu_mobile_media
+  {
+    display: none;
+  }
+
+  .header-burger 
+  {
+      display: flex;
+  }
+  
+  .product-item
+  {
+
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .menu_mobile {
@@ -204,4 +232,42 @@ main
     background-color: var(--main-white);
     display: flex !important;
     flex-direction: column;
+}
+
+.product-item{
+  width: 100%;
+  background-color: var(--prod-item-dgray);
+  text-decoration: none;
+}
+
+.product-list li{
+  padding: 20px;
+}
+.product-index{
+  color: black;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.product-description{
+  color: black;
+  font-size: 30px;
+  
+}
+.product-small-img{
+  width: 50%;
+  height: 100px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+.product-small-img img{
+  height: 100%;
+}
+
+.underline-red {
+  /* text-decoration: underline red 4px; */
+    display: inline;
+    border-bottom: 4px solid red;
+    padding-bottom: 2px; /* Додатковий відступ, якщо потрібно */  
 }
