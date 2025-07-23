@@ -119,7 +119,8 @@ main
     display: flex;
     align-items: center;
     height: 200px;
-    background-color: rgb(26, 26, 26);
+    /* background-color: rgb(26, 26, 26); */
+    background-color: rgb(55, 83, 121);
     flex-wrap: nowrap;
     align-content: center;
     flex-direction: column;
