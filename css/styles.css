@@ -415,25 +415,18 @@ main
     position: absolute;
     top: 10px;
     left: 10px;
-    width: calc(100vw - 40px);
+    width: calc(100vw - 20px);
     height: calc(100vh - 40px);
     background-color: var(--header-box-color);
     flex-direction: column;
     display: none;
     opacity: 0.95;
-    /* overflow-y: scroll; */
 }
 
 .popup_active
 {
   display: flex !important;
 }
-/* .popup-main
-{
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-} */
 .popup-body
 {
   width: 100%;
