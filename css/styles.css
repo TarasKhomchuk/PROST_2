@@ -11,6 +11,7 @@
   --content-padding: 20px;
   --new-products-padding-right: 20px;
   --header-box-color: white;
+  --popup-header-height: 40px;
 }
 
 body
@@ -159,6 +160,12 @@ main
   height: 45px;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+}
+
+#burger:hover
+{
+  box-shadow: 0 4px 8px 0 rgba(85, 83, 83, 0.1);
 }
 
 .burger-line{
@@ -209,6 +216,10 @@ main
     padding-left: 20px;
 }
 
+.new-product:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .new-product-img{
   width: -webkit-fill-available;
 }
@@ -252,6 +263,7 @@ main
   .content{
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .new-products{
     width: calc(var(--black-stripe_width) - var(--content_padding_left) - var(--content-padding) - var(--new-products-padding-right));
@@ -260,6 +272,11 @@ main
   .new-product{
     width: calc(var(--black-stripe_width) - var(--content_padding_left) - var(--content-padding) - var(--new-products-padding-right) - 40px);
   }
+  .popup-body
+  {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }  
 }
 /* mobile */
 @media (max-width: 1024px) {
@@ -296,6 +313,10 @@ main
   .product-small-img
   {
     width: 100%;
+  }
+  .popup-body
+  {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -378,4 +399,60 @@ main
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.tech-data-link{
+  text-decoration: none;
+  cursor: pointer;
+  color: dodgerblue;
+  font-size: 25px;
+}
+.tech-data-link:hover{
+  text-shadow: 3px 3px 3px rgb(154, 154, 230);
+}
+.popup {
+    transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out, transform 250ms ease-in-out;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+    background-color: var(--header-box-color);
+    flex-direction: column;
+    display: none;
+    opacity: 0.95;
+    /* overflow-y: scroll; */
+}
+
+.popup_active
+{
+  display: flex !important;
+}
+/* .popup-main
+{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+} */
+.popup-body
+{
+  width: 100%;
+  height: calc(100vh - 40px - var(--popup-header-height));
+  display: grid;
+  overflow-y: scroll;
+  row-gap: 20px;
+}
+.popup-header
+{
+  width: 100%;
+  height: var(--popup-header-height);
+}
+.close
+{
+  text-decoration: none;
+  cursor: pointer;
+}
+.close:hover
+{
+  text-shadow: 3px 3px 3px darkgray;
 }

@@ -12,3 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+function showPopup(elementName){
+  if (elementName)
+  document.getElementById(elementName).classList.toggle('popup_active');
+}
+
+function closePopup(elementName){
+  if (elementName)
+    document.getElementById(elementName).classList.toggle('popup_active');
+}
