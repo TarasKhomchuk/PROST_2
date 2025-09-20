@@ -222,6 +222,7 @@ main
 
 .new-product-img{
   width: -webkit-fill-available;
+  margin: 20px 0px 20px 0px;
 }
 
 /* desktop */
@@ -392,6 +393,7 @@ main
  .courussel-img
  {
   height: 300px;
+  margin: 20px;
  }
 
 .courussel-stripe img
