@@ -261,6 +261,9 @@ main
     align-items: center;
     min-width: 1024px;
   }
+  .product-description{
+    text-align: left;
+  }
   .courussel-stripe
   {
     flex-direction: row;
@@ -314,7 +317,9 @@ main
     flex-direction: column;
     align-items: center;
   }
-
+  .product-description{
+    text-align: center;
+  }
   .courussel-stripe
   {
     flex-direction: column;
@@ -351,6 +356,7 @@ main
 .product-list li{
   padding: 20px;
 }
+
 .product-index{
   color: black;
   font-size: 40px;
@@ -360,7 +366,7 @@ main
 .product-description{
   color: black;
   font-size: 30px;
-  
+  width: -webkit-fill-available;
 }
 .product-small-img{
    max-height: 90%;
