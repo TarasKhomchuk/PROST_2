@@ -113,6 +113,15 @@ main
   background-color: var(--main-white);
   padding: var(--content-padding);
   min-height: calc(100vh / 2.5);
+
+  /* background-image: url("../image/N95_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;   */
+
+  /* opacity: 0.2; */
+  /* transform: scale(0.8); */
 }
 
 .footer-container
@@ -377,7 +386,8 @@ main
   min-height: 300px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: space-between;
 }
 
 .dark
@@ -406,11 +416,14 @@ main
 .tech-data-link{
   text-decoration: none;
   cursor: pointer;
-  color: dodgerblue;
+  /* color: dodgerblue; */
+  font-weight: bold;
+  text-decoration: underline;
   font-size: 25px;
 }
 .tech-data-link:hover{
-  text-shadow: 3px 3px 3px rgb(154, 154, 230);
+  /* text-shadow: 3px 3px 3px rgb(154, 154, 230); */
+  text-shadow: 3px 3px 3px gray;
 }
 .popup {
     transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out, transform 250ms ease-in-out;
