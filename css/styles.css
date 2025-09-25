@@ -409,7 +409,7 @@ main
  .courussel-img
  {
   /* height: 300px; */
-  margin: 20px;
+  margin: 20px 0px 20px 0px;
  }
 
 .courussel-stripe img
