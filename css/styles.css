@@ -115,15 +115,6 @@ main
   background-color: var(--main-white);
   padding: var(--content-padding);
   min-height: calc(100vh / 2.5);
-
-  /* background-image: url("../image/N95_background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;   */
-
-  /* opacity: 0.2; */
-  /* transform: scale(0.8); */
 }
 
 .footer-container
@@ -237,7 +228,7 @@ main
 }
 
 /* desktop */
-@media (min-width: 1025px) {
+@media (min-width: 1113px) {
   :root{
     --black-stripe_width: 400px;
     --logo-width: 272px;
@@ -294,7 +285,7 @@ main
   }  
 }
 /* mobile */
-@media (max-width: 1024px) {
+@media (max-width: 1112px) {
   :root{
     --black-stripe_width: 250px;
     --logo-width: 180px;
