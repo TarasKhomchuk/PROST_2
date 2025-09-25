@@ -409,7 +409,7 @@ main
  .courussel-img
  {
   /* height: 300px; */
-  margin: 20px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
  }
 
 .courussel-stripe img
@@ -417,6 +417,7 @@ main
   width: 100%;
   height: 100%;
   object-fit: contain;
+  max-height: 300px;
 }
 
 .tech-data-link{
