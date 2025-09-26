@@ -168,7 +168,7 @@ main
 #burger:hover
 {
   box-shadow: 0 4px 8px 0 rgba(85, 83, 83, 0.1);
-}
+} 
 
 .burger-line{
   width: 50px;
@@ -254,6 +254,7 @@ main
     align-items: center;
     min-width: 1024px;
   }
+
   .product-description{
     text-align: left;
   }
@@ -266,11 +267,13 @@ main
   {
     width: 50%;
   }
-  .content{
+ .content{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+
+    /* border-radius: 10px 0 0px 10px; */
+}
   .new-products{
     width: calc(var(--black-stripe_width) - var(--content_padding_left) - var(--content-padding) - var(--new-products-padding-right));
     margin-right: var(--new-products-padding-right);
@@ -413,18 +416,22 @@ main
   max-height: 300px;
 }
 
-.tech-data-link{
+.tech-data-link {
+  background: #1a4fff;
+  color: #fff !important;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 18px;
+  border: none;
+  transition: background 0.2s;
   text-decoration: none;
-  cursor: pointer;
-  /* color: dodgerblue; */
-  font-weight: bold;
-  text-decoration: underline;
-  font-size: 25px;
+  display: inline-block;
 }
-.tech-data-link:hover{
-  /* text-shadow: 3px 3px 3px rgb(154, 154, 230); */
-  text-shadow: 3px 3px 3px gray;
-}
+.tech-data-link:hover {
+  background: #0e2a80;
+  color: #fff !important;
+  text-shadow: none;
+} 
 .popup {
     transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out, transform 250ms ease-in-out;
     position: absolute;
